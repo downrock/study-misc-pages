@@ -1,71 +1,97 @@
 # AWS Solutions Architect Study Guide
 
-Welcome to your AWS Solutions Architect study guide. This page is designed to provide comprehensive insights into various AWS services and concepts to enhance your understanding and preparation.
+Welcome to your AWS Solutions Architect study guide. This resource provides comprehensive insights into AWS services and architectures to support your preparation.
 
 ---
 
-## Topics Overview
-
-### Multi-Tier Application Architecture
-- **Benefits:** Improved security, performance, and scalability. Promotes decoupling for fine-grained management, maintenance, and higher availability.
+## Multi-Tier Application Architecture
+- **Benefits:** Improved security, performance, scalability, fine-grained management, maintenance, and availability. Promotes decoupling.
 - **Architecture Layers:**
-  - **Data Access Tier:** Database servers and systems (Bottom Tier).
-  - **Business Logic Tier:** Application tier and app servers (Middle Tier).
-  - **Presentation Tier:** Frontend, client computer, Web server (Top Tier).
+  - **Data Access Tier (Bottom Tier):** Database Servers, Systems.
+  - **Business Logic Tier (Middle Tier):** Application tier, app servers.
+  - **Presentation Tier (Top Tier):** Frontend, client computer, Web server.
 
-### AWS IAM (Identity and Access Management)
-- **IAM Policy Components:** Sid, Effect, Principal, Action, Resource, Condition, and Version.
-- Policies control fine-grained access to resources.
+---
 
-### Billing and Cost Management
-#### Budgets
-- Set alerts for exceeding thresholds with AWS Budgets for tracking and planning.
-#### Savings Plans
-- Flexible pricing for 1- or 3-year terms; Compute Savings Plans and EC2 Instance Savings Plans available.
+## AWS IAM (Identity and Access Management)
+- **IAM Policy Components:**
+  - Sid, Effect, Principal, Action, Resource, and Condition.
+  - Version is part of the IAM Policy, not the statement.
+
+---
+
+## Billing and Cost Management
+
+### AWS Budgets
+- Set custom budgets with alerts for threshold breaches. The hub for tracking and inspecting your budgets.
+
+### AWS Service Plans
+- Flexible pricing models for 1- or 3-year terms.
+  - **Types:**
+    - Compute Savings Plans
+    - EC2 Instance Savings Plans
 
 ---
 
 ## Management and Governance
 
 ### AWS CloudTrail
-- Enables governance, compliance, and operational auditing of your AWS account.
-- **CloudTrail Insights:** Detect unusual API activity.
-- **CloudTrail Lake:** Immutable storage for audit-worthy events.
+- Enables governance, compliance, and operational auditing.
+- **CloudTrail Insights:** Detect unusual API activity (retained for 90 days).
+- **CloudTrail Lake:** Immutably stores audit-worthy events.
 
 ### AWS CloudWatch
-- Application Performance Monitoring (APM) tool for observability.
-- Provides alarms, performance optimization, root cause analysis, and unified insights.
+- Application Performance Monitoring (APM) tool.
+- Provides observability, alarms, and resource optimization.
+- Features Application Insights for detection and resolution of issues in apps, databases, and workloads.
 
 ---
 
-## Key Services and Features
+## Key AWS Services
 
 ### AWS Lambda
-- Run code without managing servers. High scalability and availability.
-#### Use Cases:
-  - **File Processing:** Triggered by Amazon S3 uploads.
-  - **Stream Processing:** Real-time data processing.
-  - **Web Applications:** Scalable and highly available solutions.
-  - **IoT Backends and Mobile Backends:** Efficient handling of API requests.
+- Run code without provisioning servers.
+- **Use Cases:**
+  - File Processing (via Amazon S3).
+  - Stream Processing (via Amazon Kinesis).
+  - Scalable Web and IoT Backends.
+  - Mobile Backends (via Amazon API Gateway and AWS Amplify).
 
 ### AWS CloudFormation
-- Foundational Infrastructure-as-Code service using YAML or JSON templates.
+- Foundational Infrastructure-as-Code service with YAML or JSON templates.
 
-### AWS SQS (Simple Queue Service)
-- Decouples processes, buffers workloads, and provides message storage for serverless applications.
-- **FIFO Queues:** Ensures First In First Out processing.
+### Amazon SQS (Simple Queue Service)
+- Benefits: Security, durability, availability, scalability, and reliability.
+- **Producers > SQS Queue > Consumers Workflow:**
+  - **Producers:** Send messages.
+  - **Queues:** Store messages awaiting processing.
+  - **Consumers:** Process messages.
 
 ---
 
-## Networking
+## Networking Services
 
 ### VPC Peering
 - Connect VPCs across accounts or regions without gateways or VPN.
 
-### NAT Gateway vs Transit Gateway
-- **NAT Gateway:** Connect private subnets to external services securely.
-- **Transit Gateway:** Network transit hub for interconnecting VPCs and on-premises networks.
+### NAT Gateway vs. Transit Gateway
+- **NAT Gateway:** Secure connections for private subnets to external services.
+- **Transit Gateway:** Hub for interconnecting VPCs and on-premises networks.
+
+### Elastic Load Balancing
+- Distributes incoming traffic across EC2 instances, containers, and IP addresses.
 
 ---
 
-Feel free to expand on these sections as needed for your study guide. Let me know if you'd like me to further refine this or add any additional sections! What do you think?
+## Additional AWS Services
+- **Amazon EFS (Elastic File System):** Scalable file storage for EC2 instances.
+- **Amazon Redshift:** Petabyte-scale, serverless data warehouse for analytics.
+- **Amazon DynamoDB:** High-performance NoSQL database with continuous backups and global table replication.
+- **AWS Shield and WAF:** Security features for applications.
+
+---
+
+## Specialized AWS Tools
+- **Amazon Textract:** Extracts data from documents.
+- **Amazon Translate:** Enables real-time translations.
+- **Amazon Bedrock:** Managed environment for building knowledge bases using foundation models.
