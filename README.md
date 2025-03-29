@@ -1,56 +1,75 @@
-# AWS Solutions Architect Exam Guide
+# AWS Certified Solutions Architect (SAA-C03) Study Guide
 
-Welcome to the AWS Solutions Architect Exam Guide! This resource will help you navigate through the four main exam content areas. Click on a topic to access detailed information.
+Welcome to the AWS Certified Solutions Architect (SAA-C03) Study Guide. This guide is designed to help you prepare for the certification exam by covering key AWS services and concepts.
 
----
+## Table of Contents
 
-## Exam Content Areas
-
-### [Design Secure Architectures](#design-secure-architectures)
-Topics Covered:
-- AWS IAM (Identity and Access Management)
-- AWS CloudTrail
-- AWS Shield and WAF
-- Security Groups vs. NACLs
-- AWS KMS (Key Management Service)
-
----
-
-### [Design Resilient Architectures](#design-resilient-architectures)
-Topics Covered:
-- Multi-Tier Application Architecture
-- Amazon EFS (Elastic File System)
-- Amazon DynamoDB (Global Tables, Backups, and Replication)
-- Amazon Aurora (Global Database and Disaster Recovery)
-- Elastic Load Balancer (Stickiness and Session Affinity)
+- [Compute](#compute)
+- [Storage](#storage)
+- [Networking & Content Delivery](#networking--content-delivery)
+- [Databases](#databases)
+- [Security, Identity, and Compliance](#security-identity-and-compliance)
+- [Management & Governance](#management--governance)
+- [Monitoring & Logging](#monitoring--logging)
+- [Application Integration](#application-integration)
 
 ---
 
-### [Design High-Performing Architectures](#design-high-performing-architectures)
-Topics Covered:
-- AWS Lambda (Use Cases: File Processing, Stream Processing, IoT Backends, Web Applications)
-- Amazon SQS (FIFO Queues, SNS Integration)
-- Amazon Redshift (Petabyte-scale Analytics)
-- Elastic Fabric Adapter (HPC and ML Applications)
-- Amazon CloudFront (Distributions and Security Dashboard)
+## Compute
+- **Amazon EC2** - Virtual machines in the cloud
+- **AWS Lambda** - Serverless computing
+- **Amazon ECS** - Managed container services
+- **Amazon EKS** - Kubernetes service
+- **AWS Fargate** - Serverless containers
+
+## Storage
+- **Amazon S3** - Object storage
+- **Amazon EBS** - Block storage for EC2
+- **Amazon EFS** - Scalable file storage
+- **AWS Storage Gateway** - Hybrid cloud storage
+
+## Networking & Content Delivery
+- **Amazon VPC** - Isolated cloud networks
+- **AWS Direct Connect** - Private cloud connectivity
+- **Amazon Route 53** - DNS and domain registration
+- **Amazon CloudFront** - Content delivery network
+- **AWS Global Accelerator** - Improves availability and performance
+
+## Databases
+- **Amazon RDS** - Managed relational databases
+- **Amazon DynamoDB** - NoSQL database service
+- **Amazon Aurora** - High-performance managed database
+- **Amazon Redshift** - Data warehousing service
+
+## Security, Identity, and Compliance
+- **AWS IAM** - Identity and Access Management
+- **AWS Shield** - DDoS protection
+- **AWS WAF** - Web application firewall
+- **AWS KMS** - Key management service
+
+## Management & Governance
+- **AWS CloudFormation** - Infrastructure as Code
+- **AWS Config** - Resource inventory and compliance
+- **AWS Organizations** - Multi-account management
+- **AWS Cost Explorer** - Cost management tool
+
+## Monitoring & Logging
+- **Amazon CloudWatch** - Monitoring and observability
+- **AWS CloudTrail** - Logging AWS API calls
+- **AWS X-Ray** - Distributed application tracing
+
+## Application Integration
+- **Amazon SQS** - Message queuing service
+- **Amazon SNS** - Pub/Sub messaging
+- **AWS Step Functions** - Workflow automation
+- **Amazon EventBridge** - Event-driven computing
 
 ---
 
-### [Design Cost-Optimized Architectures](#design-cost-optimized-architectures)
-Topics Covered:
-- AWS Budgets
-- AWS Savings Plans (Compute and EC2 Instance Savings Plans)
-- NAT Gateway vs. Transit Gateway
-- Amazon S3 (Versioning and Storage Classes)
-- AWS CloudFormation (Infrastructure-as-Code Efficiency)
+## Exam Preparation Tips
+- Review the AWS Well-Architected Framework
+- Use the AWS Free Tier to practice services hands-on
+- Read AWS whitepapers and FAQs
+- Take practice exams to test your knowledge
 
----
-
-## Quick Links
-- [AWS Solutions Architect Study Guide](index.md)
-- [AWS Official Exam Resources](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
-
----
-
-Click on the respective section headings above to dive deeper into each exam content area. If there are additional topics you'd like covered, let me know, and we can add them!
-
+For additional resources, visit the [AWS Training and Certification Portal](https://www.aws.training/).
